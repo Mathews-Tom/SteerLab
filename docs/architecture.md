@@ -46,20 +46,20 @@ sequenceDiagram
 
     User->>+ChatApp: Sends prompt and preference settings
     ChatApp->>+InferenceEngine: API call: /generate(prompt, prefs={"cost": -0.8})
-    
+
     InferenceEngine->>+SteerableModel: set_steering(config)
     note right of SteerableModel: Forward hooks are now active on target layers
-    
+
     InferenceEngine->>SteerableModel: model.generate(prompt)
     loop During Forward Pass
         SteerableModel->>SteerableModel: Layer L output computed
         note right of SteerableModel: Hook for Layer L is triggered<br/>output += -0.8 * steering_vector_L
     end
     SteerableModel-->>-InferenceEngine: Returns steered text
-    
+
     InferenceEngine->>SteerableModel: clear_steering()
     note right of SteerableModel: Hooks are removed in a 'finally' block
-    
+
     InferenceEngine-->>-ChatApp: Returns API response with steered text
     ChatApp-->>-User: Displays steered response
 ```
