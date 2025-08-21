@@ -382,6 +382,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Contributing Guide](docs/contributing.md)
 - [Roadmap](docs/roadmap.md)
 
+## 📄 Research Citation
+
+```bibtex
+@article{bo2025steerable,
+  title={Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering},
+  author={Bo, et al.},
+  journal={arXiv preprint arXiv:2505.04260v2},
+  year={2025}
+}
+```
+
 ---
 
 **Built with ❤️ for the AI research and development community**

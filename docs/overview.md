@@ -79,3 +79,14 @@ The framework is designed to be extensible to any HuggingFace compatible model. 
 | **Gemma** | gemma-2-2b-it, gemma-2-9b-it | 2B, 9B |
 | **Mistral** | Mistral-7B-Instruct-v0.3 | 7B |
 | **Qwen** | Qwen2.5-7B-Instruct | 7B |
+
+## 📄 Research Citation
+
+```bibtex
+@article{bo2025steerable,
+  title={Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering},
+  author={Bo, et al.},
+  journal={arXiv preprint arXiv:2505.04260v2},
+  year={2025}
+}
+```
