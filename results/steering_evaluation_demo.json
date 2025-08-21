@@ -1,0 +1,544 @@
+{
+  "comparison_summary": {
+    "preference": "unknown",
+    "model_name": "google/gemma-2-2b-it",
+    "test_prompts": [
+      "Help me choose a restaurant for a special dinner",
+      "Recommend a vacation destination for my family",
+      "Suggest a gift for my partner's birthday",
+      "Plan entertainment for this weekend",
+      "Choose a hotel for our business trip",
+      "Pick out clothes for a job interview",
+      "Select a car for daily commuting",
+      "Plan a wedding reception venue"
+    ],
+    "steering_strengths": [
+      -1.0,
+      -0.5,
+      -0.2,
+      0.0,
+      0.2,
+      0.5,
+      1.0
+    ],
+    "results": [
+      {
+        "preference": "unknown",
+        "steering_strength": -1.0,
+        "preference_alignment_score": 0.5527025461196899,
+        "semantic_coherence_score": 0.24036942422389984,
+        "fluency_score": 0.8158333333333334,
+        "diversity_score": 0.4681818181818182,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": "places.... there and if if things places and places. sometimes places places places places. places around around places there if. and places places places there if.. if places places ways places there there places to cheap there places places and places places.. places places things places. places if stuff. there there there if if places. things things there things food when places places places people places in places places if places. places.. places places ways there stuff there things things things things.. places. things. places ways ways there there. if places places there. if things. if there there stuff places if if when places places. if there places places places if when places things places"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "with young children?\n\nTo help me recommend the best destination, please tell me more about your ideal vacation. \n\nFor example:\n* **What kind of activities do you and your family enjoy?** (e.g., exploring nature, visiting historical sites, theme parks, relaxing on the beach, trying new foods) \n* **What's your budget like?** (e.g., luxury, moderate, budget-friendly) \n* **What time of year are you thinking of traveling?** \n* **How long is your trip?** \n* **What is your family's overall travel style?** (e.g., adventurous, laid-back"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ". \n\nTo make it more personal, please suggest some ideas that are based on their hobbies and interests.\n\nPlease tell me:\n\n* **What are my partner's hobbies and interests?** \n* **What is your budget?**\n* **What is your relationship style?** (e.g., romantic, funny, sentimental, practical)\n\n\nOnce I have this information, I can give you a much more specific and helpful suggestion."
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": -0.5,
+        "preference_alignment_score": 0.5067293047904968,
+        "semantic_coherence_score": 0.22293256223201752,
+        "fluency_score": 0.8,
+        "diversity_score": 0.49493487698986977,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": ".. I should there and sometimes there there to save.. ways to save money. if you do if prices to save around places. to pay stuff when places around to save and stuff..\n. if you stuff to eat if not.. and try to eat stuff. if you. if. if when places and. there. when to save stuff.. to save food. and stuff to get food...\n\n if. ways places. places\n\n. and stuff. I try to save.. and stuff. there when there.. places. the less. and stuff.. if they sometimes. to save if.. to save places..... often"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "of four, including two children aged 6 and 8.\n\nTo make the vacation more exciting, I'd like to include some adventure activities.\n\nPlease consider that we are looking for a location that offers:\n\n* **A mix of beach and cultural attractions:** We love beaches, but also would like to experience local culture and history.\n* **Moderate prices:** We're not looking for extravagant spending.\n* **Kid-friendly activities:** We are looking for things that are appropriate for our children's ages.\n\n**Here are a few specific requests to help me narrow down options:**\n\n* **Do you prefer a beach resort experience, or an exploration of a city?**"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ".\n\nTo give you a better idea, tell me a bit about him and your relationship.\n\nFor example:\n\n* **Your partner's interests:**  (e.g., music, sports, gaming, cooking, outdoors)\n* **His personality:**  (e.g., adventurous, introverted, sentimental, practical)\n* **Your budget:** (e.g., under $50, under $100, no limit)\n* **What kind of relationship do you have?** (e.g., long-term, new relationship)\n\n\n\nThe more information you give me, the better I can tailor my suggestion!"
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": -0.2,
+        "preference_alignment_score": 0.46785029768943787,
+        "semantic_coherence_score": 0.23986145853996277,
+        "fluency_score": 0.7741666666666667,
+        "diversity_score": 0.5069832402234636,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": ". \n\nI'd like to get cheap eats.\n\nHere are some options in your area.\n\n**Taco places:**\n- Taco John's: Pretty cheap and has pretty good value for the amount of food.\n* Walmart prices are usually cheaper, but they are not as healthy. \n* Other things like grocery stores are more healthy but usually cheaper. \n\nPlease tell me more about other places that might be cheap or good for eating.\n\nWhat are some good ways to save money on food?\n\n## Good places to eat in the area.\n\nHere are some places that are cheap and might be good for eating:\n\n* *Diner:** You can find"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": ", considering the following:\n\n* **Budget:**  Moderate to high\n* **Travelers:**  Family of 4 (2 adults, 2 kids ages 6 and 8)\n* **Interests:**  Adventure, nature, and experiencing local culture.\n* **Transportation:**  Flights and rental car (we can handle some travel time)\n\n**Destination Options:**\n\n1. **Costa Rica:** Offers diverse landscapes, ziplining, rainforest exploration, beaches, and wildlife encounters.\n2. **Yellowstone National Park:** Features geysers, hot springs, wildlife, hiking trails, and stunning natural beauty. \n3. **Iceland:** Known for its glaciers, waterfalls, volcanic"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ".\n\nTo help me give you a more personalized recommendation, please tell me a little about your partner and your relationship. \n\nFor example:\n\n* **What are their hobbies and interests?**\n* **What is your relationship like?** (e.g., how long have you been together, how serious is it?)\n* **What is your budget?**\n* **What kind of gifts have they enjoyed in the past?**\n* **Do they prefer experiences or material gifts?**\n* **Are there any specific things they've been wanting lately?**\n\nThe more information you give me, the better I can help you find the perfect gift! \u2764\ufe0f"
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": 0.0,
+        "preference_alignment_score": 0.5427124500274658,
+        "semantic_coherence_score": 0.38305234909057617,
+        "fluency_score": 0.8354166666666667,
+        "diversity_score": 0.5422077922077922,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": ". \n\nTo help me, please tell me about:\n\n* **Your restaurant preferences:** What kind of food do you enjoy? What's your budget? Do you prefer casual or formal dining? \n* **The occasion:** Is this a birthday, anniversary, promotion, or just a special night out? \n* **Your location:** Where are you located? \n\nOnce I have this information, I can give you some personalized restaurant recommendations. \ud83d\ude0a"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "of 5. \n\nTo give me a good recommendation, I need some information about your ideal vacation. \n\n**Tell me about your ideal vacation:**\n\n* **What kind of activities are you interested in?** (e.g., theme parks, beaches, hiking, museums, historical sites, city sightseeing, relaxation)\n* **What is your budget?** (e.g., luxury, mid-range, budget)\n* **What is your travel style?** (e.g., adventurous, laid-back, fast-paced, slow-paced, organized, spontaneous)\n* **When are you planning to travel?** (e.g., summer, fall,"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ". \n\n**Please provide:**\n\n* **Gift Idea:** \n* **Reason for Recommending It:**\n* **Price Range:**\n* **Personalization Option:**\n* **Alternative Gift Ideas:**\n\n**Context:**\n\n*  Your partner is a **30-something year old woman**\n*  She enjoys **cooking, gardening, and traveling**\n*  She has a **love for all things vintage and unique**\n\n**What type of gift are you looking for?** Something for a practical use, something sentimental, or something fun?\n\n\nLet me know!"
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": 0.2,
+        "preference_alignment_score": 0.5715768933296204,
+        "semantic_coherence_score": 0.2838081419467926,
+        "fluency_score": 0.7991666666666666,
+        "diversity_score": 0.5560283687943263,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": "experience.\n\nTo elevate your senses, a bespoke experience awaits you.  \n\nImmerse yourself in a symphony of exquisite gastronomic artistry, crafted to tantalise your taste buds.  \n\n**Indulge in an unparalleled evening of bespoke service, bespoke cuisine, and unparalleled bespoke luxury, designed to exceed all expectations.  \n\nNow, we unveil a world of exceptional dining experiences, curated to elevate your senses.\n\n**Cast your bespoke vision, and unveil a private world crafted for you.  \n\nFrom the unparalleled suite overlooking the shimmering azure vista, to the intimate underwater setting,  our bespoke journey awaits.  \n\n**Prepare to transcend the extraordinary, with bespoke service, bespoke cuisine, and"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "of five:\n\nTo help me narrow down the options, please tell me:\n\n* **What is your budget?**  (This will help determine the type of accommodation and activities available.)\n* **What is your travel style?** (Are you looking for a relaxed beach vacation, an adventurous escape, a city break, or something else?)\n* **Ages of the family members?** (This will help determine appropriate activities and attractions.)\n* **What time of year are you thinking of traveling?** (This will affect weather and availability of activities.)\n* **Anything else you consider important for your family's vacation?** (For example, do you need to be close to"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ".  I know they love to cook and enjoy trying new things. \n\nHere are some details about them:\n\n* They love Italian food\n* They enjoy experimenting with different flavors and cuisines\n* They have a fairly basic kitchen\n* They are vegetarian\n\n* **Budget**: $100-$150 \n\n**What gift would you suggest?**\n\nHere are a few ideas I've brainstormed:\n\n* **High-quality ingredients**: A basket of Italian cheeses, cured meats, fresh pasta, truffle oil, or a selection of gourmet dried herbs.\n* **Cooking class**: A hands-on experience learning to make authentic Italian dishes."
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": 0.5,
+        "preference_alignment_score": 0.5577906966209412,
+        "semantic_coherence_score": 0.21638409793376923,
+        "fluency_score": 0.7491666666666668,
+        "diversity_score": 0.5070621468926554,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": "experience unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke redefined bespoke suite suite pinnacle suite bespoke bespoke world bespoke bespoke experience yacht yacht yacht unparalleled bespoke unparalleled bespoke bespoke bespoke yacht bespoke unparalleled bespoke bespoke bespoke suite suite bespoke bespoke immersive immersive bespoke suite suite bespoke bespoke bespoke unparalleled suite suite bespoke bespoke unparalleled bespoke bespoke bespoke bespoke bespoke bespoke suite suite unparalleled bespoke bespoke bespoke suite bespoke unparalleled unparalleled bespoke bespoke bespoke bespoke bespoke yacht bespoke unparalleled bespoke bespoke suite suite unparalleled bespoke bespoke bespoke unparalleled unparalleled bespoke bespoke suite suite unparalleled bespoke suite bespoke bespoke suite unparalleled bespoke bespoke suite suite bespoke bespoke unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke experience unparalleled bespoke unparalleled bespoke suite suite bespoke unparalleled bespoke bespoke unparalleled bespoke unparalleled bespoke suite suite bespoke bespoke bespoke bespoke suite suite"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "of four.\n\nTo help me decide, tell me about the following:\n\n* **Your travel style:**  I'm looking for something active, but also relaxing. \n* **Interests:**  History, culture, food, nature, and outdoor activities.\n* **Budget:**  I'm looking for a mid-range experience. \n\nBased on your answers, I can recommend a destination that's perfect for your family.\n\n\nLet's get started! \ud83d\ude0a"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ". It's important to remember that they are a Taurus, who loves music, movies, and fine dining.\n\nHere are some gift ideas that consider their astrological sign and preferences:\n\n**Taurus-Specific:**\n\n* **Luxury bath products:**  Imagine a spa experience at home with high-end bath bombs, body scrubs, and lotion.\n* **High-quality leather goods:** A beautiful wallet, a stylish backpack, or even a pair of designer shoes would be a hit.\n* **Decorative plants:** A beautiful succulent or orchid would add a touch of nature to their home.\n* **Handmade jewelry:**  A personalized piece with their birthstone or a meaningful design"
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      },
+      {
+        "preference": "unknown",
+        "steering_strength": 1.0,
+        "preference_alignment_score": 0.5356819033622742,
+        "semantic_coherence_score": 0.2332870066165924,
+        "fluency_score": 0.7425,
+        "diversity_score": 0.47527472527472525,
+        "example_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "steered_output": "bespoke unparalleled unparalleled bespoke bespoke yacht bespoke bespoke bespoke bespoke suite suite suite suites bespoke bespoke bespoke bespoke bespoke unparalleled suite bespoke bespoke suiteexperiences bespoke suite bespoke bespoke bespoke bespoke suite unparalleled bespoke bespoke bespoke unparalleled unrivalled bespoke bespoke bespoke bespoke yacht bespoke suite bespoke bespoke unparalleled bespoke unrivalled unparalleled bespoke bespoke bespoke suite bespoke bespoke Sotheby bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke unforgettable bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke unparalleled bespoke bespoke unparalleled suite bespoke bespoke bespoke bespoke unparalleled unparalleled unparalleled bespoke unparalleled bespoke unparalleled bespoke bespoke bespoke bespoke unparalleled bespoke suite unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke breathtaking bespoke Suite bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke bespoke immersive unparalleled bespoke suite suite bespoke bespoke"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "steered_output": "of 4 (2 adults, 2 kids, ages 8 and 10)\n\n**Consider these priorities:**\n\n* **Kid-friendly activities:**  Plenty of attractions and activities geared towards kids.\n* **Beaches:**  A nice beach to relax on and play in the sand.\n* **Moderate budget:**  Something affordable for a family of four.\n* **Pleasant weather:**  Avoid extreme heat or cold.\n\n**Here are some potential destinations:**\n\n* **Outer Banks, North Carolina:**  Beautiful beaches, lighthouses, and historical sites.  Lots of kid-friendly rentals and activities.\n* **Gulf Shores, Alabama:**  White sand beaches, calm"
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "steered_output": ".\n\nPlease provide:\n\n* **Gift category:** \n* **Gift idea:**\n* **Reason why it's a good fit for your partner:**\n\n**For example:**\n\n* **Gift category:** Experiences\n* **Gift idea:** Concert tickets to their favorite band \n* **Reason why it's a good fit:** They've been talking about seeing them for months and would absolutely love it.\n\n\n**Note:**  I need some information about your partner to give you a good recommendation. Tell me a few things about them:\n\n* **What are their hobbies and interests?**\n* **What's their personality like? (Adventurous, creative,"
+          }
+        },
+        "baseline_outputs": {
+          "prompt_1": {
+            "prompt": "Help me choose a restaurant for a special dinner",
+            "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+          },
+          "prompt_2": {
+            "prompt": "Recommend a vacation destination for my family",
+            "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+          },
+          "prompt_3": {
+            "prompt": "Suggest a gift for my partner's birthday",
+            "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+          }
+        }
+      }
+    ],
+    "baseline_alignment": 0.5130348801612854,
+    "improvement_summary": {
+      "max_alignment_improvement": 0.05854201316833496,
+      "best_steering_strength": 0.2,
+      "best_alignment_score": 0.5715768933296204,
+      "baseline_alignment": 0.5130348801612854,
+      "avg_alignment_score": 0.5335777274199894,
+      "avg_fluency_score": 0.7880357142857143,
+      "avg_coherence_score": 0.2599564343690872,
+      "relative_improvement": 11.410922616008254
+    }
+  },
+  "evaluation_details": [
+    {
+      "preference": "unknown",
+      "steering_strength": -1.0,
+      "preference_alignment_score": 0.5527025461196899,
+      "semantic_coherence_score": 0.24036942422389984,
+      "fluency_score": 0.8158333333333334,
+      "diversity_score": 0.4681818181818182,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": "places.... there and if if things places and places. sometimes places places places places. places around around places there if. and places places places there if.. if places places ways places there there places to cheap there places places and places places.. places places things places. places if stuff. there there there if if places. things things there things food when places places places people places in places places if places. places.. places places ways there stuff there things things things things.. places. things. places ways ways there there. if places places there. if things. if there there stuff places if if when places places. if there places places places if when places things places"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "with young children?\n\nTo help me recommend the best destination, please tell me more about your ideal vacation. \n\nFor example:\n* **What kind of activities do you and your family enjoy?** (e.g., exploring nature, visiting historical sites, theme parks, relaxing on the beach, trying new foods) \n* **What's your budget like?** (e.g., luxury, moderate, budget-friendly) \n* **What time of year are you thinking of traveling?** \n* **How long is your trip?** \n* **What is your family's overall travel style?** (e.g., adventurous, laid-back"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ". \n\nTo make it more personal, please suggest some ideas that are based on their hobbies and interests.\n\nPlease tell me:\n\n* **What are my partner's hobbies and interests?** \n* **What is your budget?**\n* **What is your relationship style?** (e.g., romantic, funny, sentimental, practical)\n\n\nOnce I have this information, I can give you a much more specific and helpful suggestion."
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": -0.5,
+      "preference_alignment_score": 0.5067293047904968,
+      "semantic_coherence_score": 0.22293256223201752,
+      "fluency_score": 0.8,
+      "diversity_score": 0.49493487698986977,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": ".. I should there and sometimes there there to save.. ways to save money. if you do if prices to save around places. to pay stuff when places around to save and stuff..\n. if you stuff to eat if not.. and try to eat stuff. if you. if. if when places and. there. when to save stuff.. to save food. and stuff to get food...\n\n if. ways places. places\n\n. and stuff. I try to save.. and stuff. there when there.. places. the less. and stuff.. if they sometimes. to save if.. to save places..... often"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "of four, including two children aged 6 and 8.\n\nTo make the vacation more exciting, I'd like to include some adventure activities.\n\nPlease consider that we are looking for a location that offers:\n\n* **A mix of beach and cultural attractions:** We love beaches, but also would like to experience local culture and history.\n* **Moderate prices:** We're not looking for extravagant spending.\n* **Kid-friendly activities:** We are looking for things that are appropriate for our children's ages.\n\n**Here are a few specific requests to help me narrow down options:**\n\n* **Do you prefer a beach resort experience, or an exploration of a city?**"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ".\n\nTo give you a better idea, tell me a bit about him and your relationship.\n\nFor example:\n\n* **Your partner's interests:**  (e.g., music, sports, gaming, cooking, outdoors)\n* **His personality:**  (e.g., adventurous, introverted, sentimental, practical)\n* **Your budget:** (e.g., under $50, under $100, no limit)\n* **What kind of relationship do you have?** (e.g., long-term, new relationship)\n\n\n\nThe more information you give me, the better I can tailor my suggestion!"
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": -0.2,
+      "preference_alignment_score": 0.46785029768943787,
+      "semantic_coherence_score": 0.23986145853996277,
+      "fluency_score": 0.7741666666666667,
+      "diversity_score": 0.5069832402234636,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": ". \n\nI'd like to get cheap eats.\n\nHere are some options in your area.\n\n**Taco places:**\n- Taco John's: Pretty cheap and has pretty good value for the amount of food.\n* Walmart prices are usually cheaper, but they are not as healthy. \n* Other things like grocery stores are more healthy but usually cheaper. \n\nPlease tell me more about other places that might be cheap or good for eating.\n\nWhat are some good ways to save money on food?\n\n## Good places to eat in the area.\n\nHere are some places that are cheap and might be good for eating:\n\n* *Diner:** You can find"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": ", considering the following:\n\n* **Budget:**  Moderate to high\n* **Travelers:**  Family of 4 (2 adults, 2 kids ages 6 and 8)\n* **Interests:**  Adventure, nature, and experiencing local culture.\n* **Transportation:**  Flights and rental car (we can handle some travel time)\n\n**Destination Options:**\n\n1. **Costa Rica:** Offers diverse landscapes, ziplining, rainforest exploration, beaches, and wildlife encounters.\n2. **Yellowstone National Park:** Features geysers, hot springs, wildlife, hiking trails, and stunning natural beauty. \n3. **Iceland:** Known for its glaciers, waterfalls, volcanic"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ".\n\nTo help me give you a more personalized recommendation, please tell me a little about your partner and your relationship. \n\nFor example:\n\n* **What are their hobbies and interests?**\n* **What is your relationship like?** (e.g., how long have you been together, how serious is it?)\n* **What is your budget?**\n* **What kind of gifts have they enjoyed in the past?**\n* **Do they prefer experiences or material gifts?**\n* **Are there any specific things they've been wanting lately?**\n\nThe more information you give me, the better I can help you find the perfect gift! \u2764\ufe0f"
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": 0.0,
+      "preference_alignment_score": 0.5427124500274658,
+      "semantic_coherence_score": 0.38305234909057617,
+      "fluency_score": 0.8354166666666667,
+      "diversity_score": 0.5422077922077922,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": ". \n\nTo help me, please tell me about:\n\n* **Your restaurant preferences:** What kind of food do you enjoy? What's your budget? Do you prefer casual or formal dining? \n* **The occasion:** Is this a birthday, anniversary, promotion, or just a special night out? \n* **Your location:** Where are you located? \n\nOnce I have this information, I can give you some personalized restaurant recommendations. \ud83d\ude0a"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "of 5. \n\nTo give me a good recommendation, I need some information about your ideal vacation. \n\n**Tell me about your ideal vacation:**\n\n* **What kind of activities are you interested in?** (e.g., theme parks, beaches, hiking, museums, historical sites, city sightseeing, relaxation)\n* **What is your budget?** (e.g., luxury, mid-range, budget)\n* **What is your travel style?** (e.g., adventurous, laid-back, fast-paced, slow-paced, organized, spontaneous)\n* **When are you planning to travel?** (e.g., summer, fall,"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ". \n\n**Please provide:**\n\n* **Gift Idea:** \n* **Reason for Recommending It:**\n* **Price Range:**\n* **Personalization Option:**\n* **Alternative Gift Ideas:**\n\n**Context:**\n\n*  Your partner is a **30-something year old woman**\n*  She enjoys **cooking, gardening, and traveling**\n*  She has a **love for all things vintage and unique**\n\n**What type of gift are you looking for?** Something for a practical use, something sentimental, or something fun?\n\n\nLet me know!"
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": 0.2,
+      "preference_alignment_score": 0.5715768933296204,
+      "semantic_coherence_score": 0.2838081419467926,
+      "fluency_score": 0.7991666666666666,
+      "diversity_score": 0.5560283687943263,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": "experience.\n\nTo elevate your senses, a bespoke experience awaits you.  \n\nImmerse yourself in a symphony of exquisite gastronomic artistry, crafted to tantalise your taste buds.  \n\n**Indulge in an unparalleled evening of bespoke service, bespoke cuisine, and unparalleled bespoke luxury, designed to exceed all expectations.  \n\nNow, we unveil a world of exceptional dining experiences, curated to elevate your senses.\n\n**Cast your bespoke vision, and unveil a private world crafted for you.  \n\nFrom the unparalleled suite overlooking the shimmering azure vista, to the intimate underwater setting,  our bespoke journey awaits.  \n\n**Prepare to transcend the extraordinary, with bespoke service, bespoke cuisine, and"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "of five:\n\nTo help me narrow down the options, please tell me:\n\n* **What is your budget?**  (This will help determine the type of accommodation and activities available.)\n* **What is your travel style?** (Are you looking for a relaxed beach vacation, an adventurous escape, a city break, or something else?)\n* **Ages of the family members?** (This will help determine appropriate activities and attractions.)\n* **What time of year are you thinking of traveling?** (This will affect weather and availability of activities.)\n* **Anything else you consider important for your family's vacation?** (For example, do you need to be close to"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ".  I know they love to cook and enjoy trying new things. \n\nHere are some details about them:\n\n* They love Italian food\n* They enjoy experimenting with different flavors and cuisines\n* They have a fairly basic kitchen\n* They are vegetarian\n\n* **Budget**: $100-$150 \n\n**What gift would you suggest?**\n\nHere are a few ideas I've brainstormed:\n\n* **High-quality ingredients**: A basket of Italian cheeses, cured meats, fresh pasta, truffle oil, or a selection of gourmet dried herbs.\n* **Cooking class**: A hands-on experience learning to make authentic Italian dishes."
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": 0.5,
+      "preference_alignment_score": 0.5577906966209412,
+      "semantic_coherence_score": 0.21638409793376923,
+      "fluency_score": 0.7491666666666668,
+      "diversity_score": 0.5070621468926554,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": "experience unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke redefined bespoke suite suite pinnacle suite bespoke bespoke world bespoke bespoke experience yacht yacht yacht unparalleled bespoke unparalleled bespoke bespoke bespoke yacht bespoke unparalleled bespoke bespoke bespoke suite suite bespoke bespoke immersive immersive bespoke suite suite bespoke bespoke bespoke unparalleled suite suite bespoke bespoke unparalleled bespoke bespoke bespoke bespoke bespoke bespoke suite suite unparalleled bespoke bespoke bespoke suite bespoke unparalleled unparalleled bespoke bespoke bespoke bespoke bespoke yacht bespoke unparalleled bespoke bespoke suite suite unparalleled bespoke bespoke bespoke unparalleled unparalleled bespoke bespoke suite suite unparalleled bespoke suite bespoke bespoke suite unparalleled bespoke bespoke suite suite bespoke bespoke unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke experience unparalleled bespoke unparalleled bespoke suite suite bespoke unparalleled bespoke bespoke unparalleled bespoke unparalleled bespoke suite suite bespoke bespoke bespoke bespoke suite suite"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "of four.\n\nTo help me decide, tell me about the following:\n\n* **Your travel style:**  I'm looking for something active, but also relaxing. \n* **Interests:**  History, culture, food, nature, and outdoor activities.\n* **Budget:**  I'm looking for a mid-range experience. \n\nBased on your answers, I can recommend a destination that's perfect for your family.\n\n\nLet's get started! \ud83d\ude0a"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ". It's important to remember that they are a Taurus, who loves music, movies, and fine dining.\n\nHere are some gift ideas that consider their astrological sign and preferences:\n\n**Taurus-Specific:**\n\n* **Luxury bath products:**  Imagine a spa experience at home with high-end bath bombs, body scrubs, and lotion.\n* **High-quality leather goods:** A beautiful wallet, a stylish backpack, or even a pair of designer shoes would be a hit.\n* **Decorative plants:** A beautiful succulent or orchid would add a touch of nature to their home.\n* **Handmade jewelry:**  A personalized piece with their birthstone or a meaningful design"
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    },
+    {
+      "preference": "unknown",
+      "steering_strength": 1.0,
+      "preference_alignment_score": 0.5356819033622742,
+      "semantic_coherence_score": 0.2332870066165924,
+      "fluency_score": 0.7425,
+      "diversity_score": 0.47527472527472525,
+      "example_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "steered_output": "bespoke unparalleled unparalleled bespoke bespoke yacht bespoke bespoke bespoke bespoke suite suite suite suites bespoke bespoke bespoke bespoke bespoke unparalleled suite bespoke bespoke suiteexperiences bespoke suite bespoke bespoke bespoke bespoke suite unparalleled bespoke bespoke bespoke unparalleled unrivalled bespoke bespoke bespoke bespoke yacht bespoke suite bespoke bespoke unparalleled bespoke unrivalled unparalleled bespoke bespoke bespoke suite bespoke bespoke Sotheby bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke unforgettable bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke unparalleled bespoke bespoke unparalleled suite bespoke bespoke bespoke bespoke unparalleled unparalleled unparalleled bespoke unparalleled bespoke unparalleled bespoke bespoke bespoke bespoke unparalleled bespoke suite unparalleled bespoke bespoke bespoke bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke bespoke breathtaking bespoke Suite bespoke bespoke bespoke bespoke suite bespoke bespoke bespoke bespoke immersive unparalleled bespoke suite suite bespoke bespoke"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "steered_output": "of 4 (2 adults, 2 kids, ages 8 and 10)\n\n**Consider these priorities:**\n\n* **Kid-friendly activities:**  Plenty of attractions and activities geared towards kids.\n* **Beaches:**  A nice beach to relax on and play in the sand.\n* **Moderate budget:**  Something affordable for a family of four.\n* **Pleasant weather:**  Avoid extreme heat or cold.\n\n**Here are some potential destinations:**\n\n* **Outer Banks, North Carolina:**  Beautiful beaches, lighthouses, and historical sites.  Lots of kid-friendly rentals and activities.\n* **Gulf Shores, Alabama:**  White sand beaches, calm"
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "steered_output": ".\n\nPlease provide:\n\n* **Gift category:** \n* **Gift idea:**\n* **Reason why it's a good fit for your partner:**\n\n**For example:**\n\n* **Gift category:** Experiences\n* **Gift idea:** Concert tickets to their favorite band \n* **Reason why it's a good fit:** They've been talking about seeing them for months and would absolutely love it.\n\n\n**Note:**  I need some information about your partner to give you a good recommendation. Tell me a few things about them:\n\n* **What are their hobbies and interests?**\n* **What's their personality like? (Adventurous, creative,"
+        }
+      },
+      "baseline_outputs": {
+        "prompt_1": {
+          "prompt": "Help me choose a restaurant for a special dinner",
+          "baseline_output": "for 2.\n\nTo help me, tell me about: \n\n**Your ideal dinner experience:** \n* What kind of food do you enjoy? (e.g., Italian, seafood, comfort food, etc.)\n* What kind of atmosphere are you looking for? (e.g., romantic, lively, casual, etc.) \n* What is your budget per person?\n\n**Your location:**\n* Where are you located (city and state)?\n* Are you looking for something near a specific landmark or neighborhood?\n\n**Other preferences:**\n* Do you have any dietary restrictions?\n* Are there any special occasions or events happening that might affect your choice?"
+        },
+        "prompt_2": {
+          "prompt": "Recommend a vacation destination for my family",
+          "baseline_output": "(with 2 kids ages 7 & 10) that's not too crowded and peaceful.\n\nPlease consider the following:\n\n* **Time of year:** Late spring/early summer (May-June)\n* **Location:** North America\n* **Activities:** Beaches, hiking, exploring nature, history, and small-town charm\n* **Budget:** Moderate\n\n**Here are some general vacation ideas for you:**\n\n**1. Outer Banks, North Carolina:**\n    * **Pros:** Stunning beaches, lighthouses, wild horses, historic sites like Roanoke Island.\n    * **Cons:** Can be crowded in peak summer months, but less so in late spring."
+        },
+        "prompt_3": {
+          "prompt": "Suggest a gift for my partner's birthday",
+          "baseline_output": ".\nYou're not allowed to say \"I love you\" in the your answer. \n\nYour partner enjoys:\n\n* **Music:** They are a big fan of indie rock and alternative music.\n* **Outdoor activities:** They enjoy hiking, camping, and exploring new areas.\n* **Tech:** They are fascinated by gadgets and enjoy using technology in their daily life.\n* **Coffee:** They have a strong preference for specialty coffee and unique brewing methods.\n\nBased on these interests, what gift would you recommend? \n\n**A portable Bluetooth speaker with a high-quality sound system and a sleek design.**\n\n**Reasoning:**\n\n* **Music:** It allows for"
+        }
+      }
+    }
+  ]
+}
