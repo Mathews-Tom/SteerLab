@@ -13,6 +13,8 @@
 
 This framework implements the methodology from **"Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering"** by Bo et al. (2025), published on arXiv:2505.04260v2.
 
+![SteerLab](steerlab.png)
+
 ### Paper Summary
 
 The research introduces a novel approach to personalizing Large Language Models (LLMs) through **activation steering** - a technique that modifies the model's internal representations during inference without requiring model retraining. The key contributions include:
